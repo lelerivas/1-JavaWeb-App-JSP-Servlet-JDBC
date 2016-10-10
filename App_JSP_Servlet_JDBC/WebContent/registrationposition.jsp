@@ -23,40 +23,17 @@
 ${message}
 <hr /> <br />
 
-<form method="post" action="staffcontrolcad">
+<form method="post" action="positioncontrol">
 	<fieldset style="width: 35%"> 
 	
-		<legend> Inform Staff data</legend>
+		<legend> Inform Position data</legend>
 		
-		Name:<br />
-		<input type="text" name="name">
+		Title:<br />
+		<input type="text" name="title">
 		<br/>
 		
-		Cod:<br />
-		<input type="text" name="regcod">
-		<br/>
-		
-		Gender:<br/>
-		<input type="radio" name="gender" value="female">Female &nbsp;
-		<input type="radio" name="gender" value="male">Male &nbsp;
-		
-		<br/>
-		
-		Marital Status:<br/>
-		<select name="maritalst">
-			<option value="single">Single</option>
-			<option value="married">Married</option>
-			<option value="divorced">divorced</option>
-		</select>
-		
-		<br/>
-		
-		Position:<br/>
-		<select name="idposition">
-			<c:forEach items="${listposition}" var="position">
-				<option value="${position.idposition}"> ${position.title} </option>					
-			</c:forEach>
-		</select>
+		Salary:<br />
+		<input type="text" name="salary">
 		
 		<br/>		
 		

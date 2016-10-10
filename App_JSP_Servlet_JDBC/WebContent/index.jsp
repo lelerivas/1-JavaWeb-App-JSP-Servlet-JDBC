@@ -3,22 +3,29 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Initial</title>
+<title>Home</title>
 </head>
 <body>
 
-	<h2>Aplication in JSP and Servlet with JDBC.</h2>
+<h2>Aplication in JSP and Servlet with JDBC</h2>
+
+<a href="index.jsp"> Home </a> &nbsp;|&nbsp;
+
+<a href="positioncontrol">Registration Position </a> &nbsp;|&nbsp;
 	
-	<a href="registrationstaff.jsp"> Registration Staff</a>
+<a href="newstaff">Registration Staff </a> &nbsp;|&nbsp;	
 	
-	&nbsp;&nbsp;|&nbsp;&nbsp;
-	<hr/><br/>
-	
-	<% String msg = (String) request.getAttribute("message");
-		if(msg != null){
-			out.print(msg);
-		}
-	%>
+<a href="staffcontrolcons">Consult Data </a> &nbsp;|&nbsp;
+
+<hr /> <br />
+
+<%
+	String msg = (String) request.getAttribute("message");
+	if(msg != null){
+		out.print(msg);
+	}
+
+%>
 
 </body>
 </html>

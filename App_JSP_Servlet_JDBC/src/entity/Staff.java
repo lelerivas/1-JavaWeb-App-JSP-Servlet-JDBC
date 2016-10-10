@@ -7,28 +7,27 @@ public class Staff {
 	private String regcod;
 	private String maritalst;
 	private String gender;
-	private Double salary;
+	private Position position;
 	
 	public Staff() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Staff(Integer idstaff, String name, String regcod, String maritalst, String gender, Double salary) {
+	public Staff(Integer idstaff, String name, String regcod, String maritalst, String gender) {
 		super();
 		this.idstaff = idstaff;
 		this.name = name;
 		this.regcod = regcod;
 		this.maritalst = maritalst;
 		this.gender = gender;
-		this.salary = salary;
 	}
 
 	@Override
 	public String toString() {
 		return "Staff [idstaff=" + idstaff + ", name=" + name + ", regcod=" + regcod + ", maritalst=" + maritalst
-	     	 + ", gender=" + gender + ", salary=" + salary + "]";
+				+ ", gender=" + gender + ", position=" + position + "]";
 	}
-	
+
 	public Integer getIdstaff() {
 		return idstaff;
 	}
@@ -69,12 +68,12 @@ public class Staff {
 		this.gender = gender;
 	}
 
-	public Double getSalary() {
-		return salary;
+	public Position getPosition() {
+		return position;
 	}
 
-	public void setSalary(Double salary) {
-		this.salary = salary;
+	public void setPosition(Position position) {
+		this.position = position;
 	}
-	
+		
 }
